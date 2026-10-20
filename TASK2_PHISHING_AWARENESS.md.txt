@@ -1,0 +1,28 @@
+# 🛡️ Phishing Awareness Training Module
+
+## 1. What is Phishing?
+Phishing is a form of social engineering where cybercriminals deceive individuals into revealing confidential information—such as credentials, financial data, or personal details—by impersonating trusted organizations.
+
+---
+
+## 2. Key Indicators of Phishing Emails (Red Flags)
+* 🚩 **Mismatched Sender Address:** e.g., `support@paypa1-security.com` instead of `support@paypal.com`.
+* 🚩 **Urgent Language:** Threatening account suspension within 24 hours to create panic.
+* 🚩 **Generic Greetings:** Using "Dear Customer" instead of your actual name.
+* 🚩 **Suspicious Links:** Hyperlinks that redirect to malicious, misspelled domains.
+* 🚩 **Unsolicited Attachments:** Unexpected files like `invoice.pdf.exe` or macro-enabled Word documents.
+
+---
+
+## 3. Real-World Attack Scenarios
+1. **Credential Harvesting:** Fake Google, Microsoft, or bank login portals designed to steal passwords.
+2. **Spear Phishing:** Highly targeted emails sent to specific employees pretending to be the company CEO or HR.
+3. **Smishing / Vishing:** Phishing conducted via SMS text messages or phone calls.
+
+---
+
+## 4. Mitigation & Prevention Best Practices
+* **Inspect URLs:** Always check the browser domain and hover over links before typing credentials.
+* **Enable 2FA / MFA:** Multi-Factor Authentication adds a vital security barrier even if passwords leak.
+* **Report Phishing:** Forward suspicious emails immediately to your organization's IT or Security team.
+* **Keep Software Updated:** Ensure your web browsers, operating systems, and security tools are patched regularly.

@@ -1,0 +1,25 @@
+# 🔒 Secure Code Review & Audit Report
+
+## 1. Vulnerability Findings
+
+### ❌ Vulnerable Code Example
+```python
+import sqlite3
+
+def authenticate_user(username, password):
+    conn = sqlite3.connect("users.db")
+    cursor = conn.cursor()
+    # CRITICAL: Direct String Formatting leads to SQL Injection (SQLi)
+    query = f"SELECT * FROM users WHERE username = '{username}' AND password = '{password}'"
+    cursor.execute(query)
+    return cursor.fetchone()
+
+import sqlite3
+
+def authenticate_user(username, password):
+    conn = sqlite3.connect("users.db")
+    cursor = conn.cursor()
+    # SECURE: Using Parameterized Queries
+    query = "SELECT * FROM users WHERE username = ? AND password = ?"
+    cursor.execute(query, (username, password))
+    return cursor.fetchone()
